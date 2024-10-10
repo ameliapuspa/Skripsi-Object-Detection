@@ -1,9 +1,11 @@
 # Palm Oil Leaf Bagworm Detection using Faster R-CNN and YOLOv8
 This repository contains my bachelor degree's final project, where I compare the performance of **Faster R-CNN** and **YOLOv8** for detecting bagworms on palm oil leaves. The objective of this project is to determine which model performs better in detecting bagworms based on accuracy, precision, and recall. The entire project was developed using Google Colaboratory.
 ## Introduction
-Indonesia has become the world's largest palm oil producer since 2006, and the health of palm oil leaves, which play a key role in photosynthesis, is crucial for producing high-quality fruit. Bagworms (Metisa plana) are one of the main pests that can damage these leaves, negatively impacting crop productivity.
+Indonesia has become the world's largest palm oil producer since 2006, and the health of palm oil leaves, which play a key role in photosynthesis, is crucial for producing high-quality fruit. Bagworms (*Metisa plana*) are one of the main pests that can damage these leaves, negatively impacting crop productivity.
 Currently, pest detection is done manually through visual observation, which is not always effective. This project aims to automate the detection of bagworms using deep learning models, comparing Faster R-CNN and YOLOv8, and exploring the impact of various tiling techniques to improve detection on small objects like bagworms.
+
 This is an example of an oil palm leaf affected by bagworms:
+
 ![alt_text](https://github.com/ameliapuspa/Skripsi-Object-Detection/blob/main/images/ulat%20kantong.png?raw=true)
 ## Dataset
 The dataset consists of **104 images** of palm oil leaves with and without bagworm infestations, provided by **PT SMART Tbk, Riau**. The images are annotated and augmented using **Roboflow**.
@@ -11,7 +13,9 @@ The dataset consists of **104 images** of palm oil leaves with and without bagwo
 - **Train/Validation/Test split**: 73/21/10
 - **Annotation tool**: Roboflow
 - **Augmentation techniques**: Random rotations, flips, and crops
+
 Dataset overview:
+
 ![alt_text](https://github.com/ameliapuspa/Skripsi-Object-Detection/blob/main/images/dataset%20preview.png?raw=true)
 ## Tiling Scenarios
 Due to the small size of the bagworms in the images, I experimented with tiling techniques to improve detection performance. Four different scenarios were tested:
