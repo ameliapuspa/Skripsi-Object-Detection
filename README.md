@@ -3,14 +3,18 @@ This repository contains my bachelor degree's final project, where I compare the
 ## Introduction
 Indonesia has become the world's largest palm oil producer since 2006, and the health of palm oil leaves, which play a key role in photosynthesis, is crucial for producing high-quality fruit. Bagworms (Metisa plana) are one of the main pests that can damage these leaves, negatively impacting crop productivity.
 Currently, pest detection is done manually through visual observation, which is not always effective. This project aims to automate the detection of bagworms using deep learning models, comparing Faster R-CNN and YOLOv8, and exploring the impact of various tiling techniques to improve detection on small objects like bagworms.
+This is an example of an oil palm leaf affected by bagworms:
+![alt_text](https://github.com/ameliapuspa/Skripsi-Object-Detection/blob/main/images/ulat%20kantong.png?raw=true)
 ## Dataset
 The dataset consists of **104 images** of palm oil leaves with and without bagworm infestations, provided by **PT SMART Tbk, Riau**. The images are annotated and augmented using **Roboflow**.
 - **Image dimensions**: 360 x 640 px
 - **Train/Validation/Test split**: 73/21/10
 - **Annotation tool**: Roboflow
 - **Augmentation techniques**: Random rotations, flips, and crops
+Dataset overview:
+![alt_text](https://github.com/ameliapuspa/Skripsi-Object-Detection/blob/main/images/dataset%20preview.png?raw=true)
 ## Tiling Scenarios
-Due to the small size of the bagworms in the images, we experimented with tiling techniques to improve detection performance. Four different scenarios were tested:
+Due to the small size of the bagworms in the images, I experimented with tiling techniques to improve detection performance. Four different scenarios were tested:
 1. **No Tiling**: Images used in their original dimensions (360 x 640 px)
 2. **Tiling 2x2**: Each image is split into 4 tiles
 3. **Tiling 3x3**: Each image is split into 9 tiles
